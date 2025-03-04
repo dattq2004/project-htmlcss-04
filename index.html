@@ -74,10 +74,173 @@
             href="assests/favicon/favicon-16x16.png"
         />
         <link rel="manifest" href="assests/favicon/manifest.json" />
+        <!-- Embed Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
+            rel="stylesheet"
+        />
+        <!-- Embed CSS -->
+        <link rel="stylesheet" href="assests/css/reset.css" />
+        <link rel="stylesheet" href="assests/css/styles.css" />
+        <!--  -->
         <meta name="msapplication-TileColor" content="#ffffff" />
         <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
         <meta name="theme-color" content="#ffffff" />
         <title>Lucky</title>
     </head>
-    <body></body>
+    <body>
+        <!-- Header -->
+        <header class="header">
+            <div class="container">
+                <div class="header-top">
+                    <!-- Header Logo -->
+                    <div class="header__logo">
+                        <a href="#!">
+                            <img src="/assests/img/logo.svg" alt="Lucky" />
+                        </a>
+                    </div>
+                    <!-- Header Menu -->
+                    <nav class="navbar">
+                        <ul class="navbar__list">
+                            <li class="navbar__item">
+                                <a
+                                    href="#!"
+                                    class="navbar__link navbar__link--acitve"
+                                    >Home</a
+                                >
+                            </li>
+                            <li class="navbar__item">
+                                <a href="#!" class="navbar__link">About</a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="#!" class="navbar__link"
+                                    >Services & Rates</a
+                                >
+                            </li>
+                            <li class="navbar__item">
+                                <a href="#!" class="navbar__link">Reviews</a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="#!" class="navbar__link"
+                                    >Contacts us</a
+                                >
+                            </li>
+                        </ul>
+                    </nav>
+                    <!-- Header Action -->
+                    <div class="header-action">
+                        <a href="#!" class="header-action__login">Sign in</a>
+                        <a href="#!" class="btn header-action__signup">
+                            Sign up
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero__inner">
+                    <div class="hero__images">
+                        <div class="hero__img-wrap">
+                            <img
+                                src="assests/img/hero-cat.svg"
+                                alt="Cat"
+                                class="hero__img"
+                            />
+                            <img
+                                src="assests/img/hero-linear01.svg"
+                                alt=""
+                                class="hero__decor hero__decor--left"
+                            />
+                            <img
+                                src="assests/img/hero-linear02.svg"
+                                alt=""
+                                class="hero__decor hero__decor--right"
+                            />
+                        </div>
+                        <div class="hero__img-wrap--small">
+                            <img
+                                src="assests/img/hero-dog.svg"
+                                alt="Dog"
+                                class="hero__img--small"
+                            />
+                        </div>
+                        <div class="hero__list">
+                            <div class="hero__item">
+                                <img
+                                    src="assests/img/hero-item-1.svg"
+                                    alt=""
+                                    class="hero__item-img"
+                                />
+                                <div class="heroo__item--right">
+                                    <p class="hero__item-heading">Pet Health</p>
+                                    <div class="hero__item-rectangle"></div>
+                                    <div
+                                        class="hero__item-rectangle hero__item-rectangle--small"
+                                    ></div>
+                                </div>
+                            </div>
+                            <div class="hero__separate"></div>
+                            <div class="hero__item">
+                                <img
+                                    src="assests/img/hero-item-2.svg"
+                                    alt=""
+                                    class="hero__item-img"
+                                />
+                                <div class="heroo__item--right">
+                                    <p class="hero__item-heading">Pet Health</p>
+                                    <div class="hero__item-rectangle"></div>
+                                    <div
+                                        class="hero__item-rectangle hero__item-rectangle--small"
+                                    ></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero__content">
+                        <h1 class="hero__heading">
+                            Established & Trusted Pet Care Service
+                        </h1>
+                        <p class="hero__desc">
+                            Discover a wide variety of Pawsitive services to
+                            choose from, including daycare, private walks,
+                            office duty and spa.
+                        </p>
+                        <div class="hero__content--bottom">
+                            <a href="#!" class="btn hero__booking"
+                                >Book a Meet
+                                <span class="btn__icon">
+                                    <svg
+                                        width="8"
+                                        height="8"
+                                        viewBox="0 0 9 8"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M3.48584 1.5L5.98584 4L3.48584 6.5"
+                                            stroke="#FD5056"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                    </svg>
+                                </span>
+                            </a>
+
+                            <a href="#!" class="hero__call">Schedule a Call </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
 </html>
