@@ -291,3 +291,120 @@ button {
     text-decoration-thickness: Auto;
     color: var(--headingcolor);
 }
+
+/* ============== Service ============== */
+
+.service {
+    background-color: #fff6ed;
+}
+
+.service__top {
+    margin-bottom: 31px;
+}
+
+.service__desc {
+    font-family: Sora;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 16px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #5e6085;
+    margin-bottom: 15px;
+}
+
+.service__body {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    column-gap: 71px;
+    margin-top: 71px;
+}
+
+.service__column {
+    margin-top: 31px;
+}
+
+.service__item {
+    background-color: #fff;
+    padding: 30px 22px 30px 28px;
+    border-radius: 10px;
+    border: 2px solid #ffbc7a42;
+}
+
+.service__item:not(:nth-child(1)) {
+    margin-top: 24px;
+}
+
+.service__item--heading {
+    position: relative;
+    padding-left: 12px;
+    gap: 12px;
+    font-family: Sora;
+    font-weight: 600;
+    font-size: 2.2rem;
+    line-height: 22px;
+    letter-spacing: 0%;
+    color: #000958;
+}
+
+.service__item--heading::before {
+    content: "";
+    position: absolute;
+    border: 2px solid;
+    inset: 0 auto 0 0;
+    width: 2px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(89.89deg, #ff5b2e 0.39%, #ffa187 100.29%);
+}
+
+.service__item--desc {
+    margin-top: 18px;
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: #656689;
+}
+
+.service__item--more {
+    margin-top: 24px;
+    font-family: Sora;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 12px;
+    display: flex;
+    align-items: center;
+    color: #34396a;
+    column-gap: 6px;
+}
+
+.arrow {
+    width: 12px;
+    height: 12px;
+}
+
+.service__img--wrap {
+    margin-top: 17px;
+    position: relative;
+    display: block;
+}
+
+.service__img--wrap::after {
+    content: "";
+    position: absolute;
+    border-radius: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 350px;
+    width: 410px;
+    bottom: 0;
+    background: linear-gradient(180deg, #9df1fb 0%, #73d0db 108.14%);
+}
+
+.service__img {
+    position: relative;
+    z-index: 2;
+    display: block;
+}
