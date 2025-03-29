@@ -96,7 +96,7 @@ button {
     font-family: Poppins;
     font-weight: 400;
     font-size: 1.6rem;
-    line-height: 30px;
+    line-height: 1.875;
     letter-spacing: 0%;
 }
 
@@ -847,4 +847,145 @@ button {
     height: 56px;
     color: #ff5b2e;
     border: 1px solid currentColor;
+}
+
+/* ============== Price ============== */
+
+.price {
+    background-color: #fff6ed;
+    padding: 86px;
+    padding-bottom: 130px;
+}
+
+.price__heading {
+    text-align: center;
+}
+.price__desc {
+    width: 60.1%;
+    margin: 0 auto;
+    margin-top: 24px;
+    text-align: center;
+}
+
+.price__checkbox--wrap {
+    margin-top: 38px;
+}
+
+.price__checkbox {
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    width: 23.59%;
+    height: 56px;
+    color: #ff5b2e;
+    border: 1px solid #ff5b2e;
+    border-radius: 31px;
+    display: flex;
+    /* justify-content: space-evenly; */
+    align-items: center;
+}
+
+.price__checkbox--label {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.price__checkbox--input:checked + .price__checkbox--label {
+    background: #ff5b2e;
+    color: #fff;
+    border-radius: 31px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.price__checkbox--input:not(:checked) + .price__checkbox--label {
+    color: inherit;
+    background: inherit;
+}
+
+.price--discount {
+    position: absolute;
+    right: -110px;
+    bottom: 29px;
+}
+
+.price__list {
+    display: grid;
+    margin-top: 56px;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 44px;
+    padding: 0 88px;
+}
+
+.price__item {
+    background: #fff;
+    border-radius: 20px;
+    padding: 30px 28px 43px 28px;
+}
+
+.price__item--type {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1;
+    color: #ff5b2e;
+}
+
+.price__item--level {
+    margin-top: 8px;
+    margin-bottom: 24px;
+    font-family: Sora;
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1;
+    color: #3f4065;
+}
+
+.price__item--price {
+    font-family: Sora;
+    font-weight: 700;
+    font-size: 3.3rem;
+    line-height: 1.01;
+    color: var(--headingcolor);
+}
+
+.price__item--cta {
+    margin-top: 22px;
+    border: 1px solid #ff5b2e;
+    color: #ff5b2e;
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1;
+}
+
+.price__item--cta:hover {
+    background: #ff5b2e;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.price--list {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 18px;
+}
+
+.price--item {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.4;
+    color: #656689;
+}
+
+.price--item::before {
+    content: url(/assests/img/price-check.svg);
 }

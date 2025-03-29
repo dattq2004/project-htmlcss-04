@@ -589,5 +589,123 @@
                 </div>
             </div>
         </section>
+        <!-- Price Section -->
+        <section class="price">
+            <div class="container">
+                <div class="price__inner">
+                    <h1 class="section_heading price__heading">
+                        The Best Choice
+                    </h1>
+                    <p class="section_desc price__desc">
+                        We offer long-term and short-term boarding. Every dog
+                        has its own private, spacious room and daily individual
+                        time in our large play yard.
+                    </p>
+                    <div class="price__checkbox--wrap">
+                        <div class="price__checkbox">
+                            <input
+                                id="price-switch-1"
+                                type="checkbox"
+                                class="price__checkbox--input"
+                                hidden
+                                value="Monthly"
+                            />
+                            <label
+                                for="price-switch-1"
+                                class="price__checkbox--label"
+                                >Monthly</label
+                            >
+                            <input
+                                id="price-switch-2"
+                                type="checkbox"
+                                class="price__checkbox--input"
+                                value="Yearly"
+                                hidden
+                                checked
+                            />
+                            <label
+                                for="price-switch-2"
+                                class="price__checkbox--label"
+                                >Yearly</label
+                            >
+                            <img
+                                src="assests/img/discount.svg"
+                                alt="Save 15%"
+                                class="price--discount"
+                            />
+                        </div>
+                    </div>
+                    <div class="price__list">
+                        <!-- Price Item 1 -->
+                        <div class="price__item">
+                            <p class="price__item--type">Basic</p>
+                            <h3 class="price__item--level">Day care</h3>
+                            <strong class="price__item--price">$150</strong>
+                            <a href="#!" class="btn price__item--cta"
+                                >Purchase now</a
+                            >
+                            <ul class="price--list">
+                                <li class="price--item">Single room</li>
+                                <li class="price--item">Socialist Exercise</li>
+                                <li class="price--item">Custom Meals</li>
+                                <li class="price--item">Spa and Grooming</li>
+                                <li class="price--item">Exercise 2x</li>
+                                <li class="price--item">Custom Meals</li>
+                                <li class="price--item">Grooming 2x</li>
+                            </ul>
+                        </div>
+                        <!-- Price Item 2 -->
+                        <div class="price__item">
+                            <p class="price__item--type">Exclusive</p>
+                            <h3 class="price__item--level">2X Care</h3>
+                            <strong class="price__item--price">$199</strong>
+                            <a href="#!" class="btn price__item--cta"
+                                >Purchase now</a
+                            >
+                            <ul class="price--list">
+                                <li class="price--item">Single room</li>
+                                <li class="price--item">Socialist Exercise</li>
+                                <li class="price--item">Custom Meals</li>
+                                <li class="price--item">Spa and Grooming</li>
+                                <li class="price--item">Exercise 2x</li>
+                                <li class="price--item">Custom Meals</li>
+                                <li class="price--item">Grooming 2x</li>
+                            </ul>
+                        </div>
+                        <!-- Price Item 3 -->
+                        <div class="price__item">
+                            <p class="price__item--type">Platinum</p>
+                            <h3 class="price__item--level">4X Care</h3>
+                            <strong class="price__item--price">$299</strong>
+                            <a href="#!" class="btn price__item--cta"
+                                >Purchase now</a
+                            >
+                            <ul class="price--list">
+                                <li class="price--item">Single room</li>
+                                <li class="price--item">Socialist Exercise</li>
+                                <li class="price--item">Custom Meals</li>
+                                <li class="price--item">Spa and Grooming</li>
+                                <li class="price--item">Exercise 2x</li>
+                                <li class="price--item">Custom Meals</li>
+                                <li class="price--item">Grooming 2x</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script>
+            document
+                .querySelectorAll(".price__checkbox--input")
+                .forEach((checkbox) => {
+                    checkbox.addEventListener("change", function () {
+                        document
+                            .querySelectorAll(".price__checkbox--input")
+                            .forEach((other) => {
+                                if (other != this) other.checked = false;
+                            });
+                    });
+                });
+        </script>
     </body>
 </html>
