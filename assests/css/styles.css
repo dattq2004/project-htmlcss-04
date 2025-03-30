@@ -1213,3 +1213,135 @@ button {
     line-height: 1.71;
     color: #656689;
 }
+
+/* ============== Footer ============== */
+
+.footer {
+    padding-top: 52px;
+    padding-bottom: 48px;
+    position: relative;
+}
+
+.footer::before {
+    content: "";
+    position: absolute;
+    background: #fff6ed;
+    z-index: -1;
+    width: 615px;
+    height: 100%;
+}
+
+.footer__inner {
+    display: flex;
+    column-gap: 341px;
+}
+
+.footer__left {
+    margin-top: 62px;
+}
+
+.subscribe-form {
+    position: relative;
+    margin-top: 35px;
+}
+.subcribe-input {
+    border-radius: 23px;
+    border: 1px solid #ff5b2e40;
+    font-family: Poppins;
+    font-weight: 300;
+    font-size: 1.2rem;
+    line-height: 1.1;
+    padding: 16px 0 16px 22px;
+    width: 268px;
+    height: 46px;
+    outline: none;
+}
+
+.subcribe-submit {
+    position: absolute;
+    left: 223px;
+    border-radius: 50%;
+    background: #ff5b2e;
+    width: 45px;
+    height: 46px;
+    border: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__heading {
+    font-family: Sora;
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1.1;
+    color: #000958;
+}
+
+.footer__left--heading {
+    margin-top: 68px;
+}
+
+.footer__social {
+    display: flex;
+    column-gap: 16px;
+    margin-top: 16px;
+}
+
+.social__link {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__right {
+}
+
+.footer__row {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto;
+    row-gap: 58px;
+    column-gap: 137px;
+}
+
+.footer__list {
+    margin-top: 14px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-item__link {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 2;
+    color: #656689;
+}
+
+.copyright-desc {
+    color: #656689;
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0%;
+}
+
+.footer__copyright {
+    margin-top: 52px;
+    text-align: center;
+}
+
+.copyright-desc {
+    color: #656689;
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.1;
+    opacity: 0.5;
+}
