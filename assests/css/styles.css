@@ -953,6 +953,10 @@ button {
 }
 
 .price__item--cta {
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-top: 22px;
     border: 1px solid #ff5b2e;
     color: #ff5b2e;
