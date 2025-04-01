@@ -1017,13 +1017,13 @@ button {
     align-items: center;
     justify-content: center;
     color: #ff5b2e;
+    transition: 0.5s;
 }
 
 .review__arrow:hover {
     cursor: pointer;
     background-color: #ff5b2e;
     color: #fff;
-    transition: 0.5s;
 }
 
 .review__content {
